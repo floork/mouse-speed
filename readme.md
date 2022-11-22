@@ -17,3 +17,9 @@ For Debian / Ubuntu
 ```sh
 sudo apt -y install imwheel zenity && curl -s -L https://raw.githubusercontent.com/floork/mouse-speed/main/speed.sh | bash
 ```
+
+## to make it persistent
+
+```sh
+curl -s -L https://raw.githubusercontent.com/floork/mouse-speed/main/cron.sh | bash
+```
