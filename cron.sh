@@ -1,9 +1,9 @@
 #!/bin/bash
-#write out current crontab
-crontab -l > mycron
-#echo new cron into cron file
-echo "@reboot imwheel" >> mycron
-#install new cron file
-crontab mycron
-rm mycron
 
+touch startup.sh
+chmod +x startup.sh
+echo "#!/bin/sh" > startup.sh
+echo "" >> startup.sh
+echo "imwheel" >> startup.sh
+
+sudo mv startup.sh /etc/profile.d/
